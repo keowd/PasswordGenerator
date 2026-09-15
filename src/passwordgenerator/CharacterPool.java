@@ -1,6 +1,10 @@
 package passwordgenerator;
 
 public class CharacterPool {
+    /**
+     * Класс реализует генерацию пула символов, из
+     * которых будет состоять пароль.
+     */
 
     private static final String LETTERS_LOWER = "abcdefghijklmnopqrstuvwxyz";
     private static final String LETTERS_UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
