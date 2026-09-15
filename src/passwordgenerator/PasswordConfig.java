@@ -5,6 +5,7 @@ public class PasswordConfig {
      * Настройки конфигурации пароля.
      */
 
+    int length;
     private boolean useDigits;
     private boolean useUpperSymbols;
     private boolean useLowerSymbols;
