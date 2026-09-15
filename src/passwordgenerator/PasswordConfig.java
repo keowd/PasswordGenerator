@@ -22,4 +22,20 @@ public class PasswordConfig {
         this.useSpecialSymbols = useSpecialSymbols;
     }
 
+    public boolean getUsingDigits() {
+        return this.useDigits;
+    }
+
+    public boolean getUsingUpperSymbols() {
+        return this.useUpperSymbols;
+    }
+
+    public boolean getUsingLowerSymbols() {
+        return this.useLowerSymbols;
+    }
+
+    public boolean getUsingSpecialSymbols() {
+        return this.useSpecialSymbols;
+    }
+
 }

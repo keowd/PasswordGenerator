@@ -13,7 +13,9 @@ public class CharacterPool {
 
     private final String pool;
 
-    public CharacterPool(PasswordConfig config) {}
+    public CharacterPool(PasswordConfig config) {
+        StringBuilder charPoolSB = new StringBuilder();
+    }
 
     public String getPool() {
         return this.pool;
