@@ -13,13 +13,20 @@ public class CharacterPool {
 
     private final String pool;
 
+    //Собирает весь пул символов пароля в единую строку.
     public CharacterPool(PasswordConfig config) {
         StringBuilder charPoolSB = new StringBuilder();
+
+        if (config.getUsingDigits()) { charPoolSB.append(NUMBERS); }
+        if (config.getUsingUpperSymbols()) { charPoolSB.append(LETTERS_UPPER); }
+        if (config.getUsingLowerSymbols()) { charPoolSB.append(LETTERS_LOWER); }
+        if (config.getUsingSpecialSymbols()) { charPoolSB.append(SPECIAL_SYMBOLS); }
+
+        this.pool = charPoolSB.toString();
     }
 
     public String getPool() {
         return this.pool;
     }
-
 
 }
