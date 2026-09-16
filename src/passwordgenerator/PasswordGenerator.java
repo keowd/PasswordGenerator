@@ -3,7 +3,7 @@ import java.security.SecureRandom;
 
 public class PasswordGenerator {
 
-    private final SecureRandom rangomizer = new SecureRandom();
+    private final SecureRandom randomizer = new SecureRandom();
 
     public String generate(PasswordConfig config) {
         CharacterPool pool = new CharacterPool(config);
@@ -12,7 +12,7 @@ public class PasswordGenerator {
 
         // Собирает тело пароля, проходясь по пулу возможных символов.
         for (int i = 0; i < config.length; i++) {
-            int index = rangomizer.nextInt(poolCharacters.length());
+            int index = randomizer.nextInt(poolCharacters.length());
             password.append(poolCharacters.charAt(index));
         }
         return password.toString();

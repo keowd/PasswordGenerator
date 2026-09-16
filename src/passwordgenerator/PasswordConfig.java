@@ -15,8 +15,9 @@ public class PasswordConfig {
      * Создаётся один раз, поэтому значения полей
      * конфигурируются только через конструктор.
      */
-    public PasswordConfig(boolean useDigits, boolean useUpperSymbols,
+    public PasswordConfig(int length, boolean useDigits, boolean useUpperSymbols,
                           boolean useLowerSymbols, boolean useSpecialSymbols) {
+        this.length = length;
         this.useDigits = useDigits;
         this.useLowerSymbols = useLowerSymbols;
         this.useUpperSymbols = useUpperSymbols;
